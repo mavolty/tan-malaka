@@ -1,0 +1,27 @@
+{
+  "name": "tan-malaka",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mavolty/tan-malaka.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mavolty/tan-malaka/issues"
+  },
+  "homepage": "https://github.com/mavolty/tan-malaka#readme",
+  "dependencies": {
+    "locomotive-scroll": "^4.1.3"
+  },
+  "devDependencies": {
+    "parcel": "^2.0.1"
+  }
+}

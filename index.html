@@ -10,12 +10,13 @@
       href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./src/css/locomotive-scroll.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
     <title>Tan Malaka</title>
   </head>
-  <body>
-    <header class="hero">
-      <figure class="hero__media" id="img-div">
+  <body data-scroll-container>
+    <header class="hero" data-scroll-section>
+      <figure class="hero__media" id="img-div" data-scroll>
         <img
           src="./assets/hero.jpg"
           alt="Tan Malaka"
@@ -26,30 +27,49 @@
       </figure>
       <h1 id="title" class="hero__title display-4xl">Tan Malaka</h1>
     </header>
-    <main id="main">
+    <main id="main" data-scroll-section>
       <section class="intro">
-        <blockquote class="intro__quote display-lg" id="tribute-info">
+        <blockquote
+          class="intro__quote display-lg"
+          id="tribute-info"
+          data-scroll
+          data-scroll-speed="1"
+        >
           “Tujuan pendidikan itu untuk mempertajam kecerdasan, memperkukuh
           kemauan, serta memperhalus perasaan.”
         </blockquote>
         <article class="intro__article">
-          <figure class="intro__media">
+          <figure class="intro__media" data-scroll data-scroll-speed="3">
             <img
               src="./assets/intro.png"
               alt="Tan Malaka muda"
               class="intro__image"
             />
           </figure>
-          <p class="intro__description text-lg">
+          <p
+            class="intro__description text-lg"
+            data-scroll
+            data-scroll-speed="1"
+          >
             Tan Malaka lahir pada tanggal 2 Juni 1897 di Nagari Pandam Garang,
             Sumatra Barat.
           </p>
         </article>
       </section>
       <section class="masa-muda">
-        <h2 class="masa-muda__title display-2xl">Masa Muda</h2>
+        <h2
+          class="masa-muda__title display-2xl"
+          data-scroll
+          data-scroll-speed="1"
+        >
+          Masa Muda
+        </h2>
         <div class="masa-muda__info">
-          <article class="masa-muda__article text-md">
+          <article
+            class="masa-muda__article text-md"
+            data-scroll
+            data-scroll-speed="1"
+          >
             <p class="masa-muda__paragraph">
               Nama asli Tan Malaka adalah Sutan Ibrahim, sedangkan Tan Malaka
               adalah nama semi-bangsawan yang ia dapatkan dari garis turunan
@@ -68,7 +88,7 @@
               agama dan berlatih pencak silat.
             </p>
           </article>
-          <figure class="masa-muda__media">
+          <figure class="masa-muda__media" data-scroll data-scroll-speed="3">
             <img
               src="./assets/sepak-bola.png"
               alt="Sepak Bola"
@@ -78,11 +98,19 @@
         </div>
       </section>
       <section class="education">
-        <h2 class="education__heading display-lg">
+        <h2
+          class="education__heading display-lg"
+          data-scroll
+          data-scroll-speed="1"
+        >
           Pada tahun 1908, ia didaftarkan ke Kweekschool (sekolah guru negara)
           di Fort de Kock.
         </h2>
-        <article class="education__article text-md">
+        <article
+          class="education__article text-md"
+          data-scroll
+          data-scroll-speed="1"
+        >
           <p class="education__paragraph">
             Menurut GH Horensma, salah satu guru di sekolahnya itu, Tan Malaka
             adalah murid yang cerdas, meskipun kadang-kadang tidak patuh. Di
@@ -97,14 +125,18 @@
             upacara tradisional pada tahun 1913.
           </p>
         </article>
-        <figure class="education__media">
+        <figure class="education__media" data-scroll data-scroll-speed="2">
           <img
             src="./assets/kweekschool.jpg"
             alt="KweekSchool"
             class="education__image"
           />
         </figure>
-        <h2 class="education__quote display-lg">
+        <h2
+          class="education__quote display-lg"
+          data-scroll
+          data-scroll-speed="1"
+        >
           “Bila kaum muda yang telah belajar di sekolah dan menganggap dirinya
           terlalu tinggi dan pintar untuk melebur dengan masyarakat yang bekerja
           dengan cangkul dan hanya memiliki cita-cita yang sederhana, maka lebih
@@ -113,14 +145,22 @@
       </section>
       <section class="masa-kuliah">
         <!-- <div class="masa-kuliah__media"> -->
-        <figure class="masa-kuliah__media-school">
+        <figure
+          class="masa-kuliah__media-school"
+          data-scroll
+          data-scroll-speed="2"
+        >
           <img
             src="./assets/rijkskweekschool.jpg"
             alt="Rijkskweekschool"
             class="masa-kuliah__image-school"
           />
         </figure>
-        <figure class="masa-kuliah__media-book">
+        <figure
+          class="masa-kuliah__media-book"
+          data-scroll
+          data-scroll-speed="2"
+        >
           <img
             src="./assets/de-fransche.jpg"
             alt="Buku De Fransche Revolutie"
@@ -128,7 +168,11 @@
           />
         </figure>
         <!-- </div> -->
-        <article class="masa-kuliah__article text-md">
+        <article
+          class="masa-kuliah__article text-md"
+          data-scroll
+          data-scroll-speed="1"
+        >
           <p class="masa-kuliah__paragraph">
             Meskipun diangkat menjadi datuk, pada bulan Oktober 1913, ia
             meninggalkan desanya untuk belajar di Rijkskweekschool (sekolah
@@ -150,13 +194,21 @@
             panutannya.
           </p>
         </article>
-        <blockquote class="masa-kuliah__quote display-lg">
+        <blockquote
+          class="masa-kuliah__quote display-lg"
+          data-scroll
+          data-scroll-speed="1"
+        >
           “Idealisme adalah kemewahan terakhir yang hanya dimiliki oleh pemuda.”
         </blockquote>
       </section>
 
       <section class="komunisme">
-        <article class="komunisme__article text-md">
+        <article
+          class="komunisme__article text-md"
+          data-scroll
+          data-scroll-speed="1"
+        >
           <p class="komunisme__paragraph">
             Setelah itu ia mulai membenci budaya Belanda dan terkesan oleh
             masyarakat Jerman dan Amerika. Karena banyaknya pengetahuan yang ia
@@ -176,45 +228,65 @@
             lulus dan menerima ijazahnya yang disebut hulpactie.
           </p>
         </article>
-        <figure class="komunisme__media-henk">
+        <figure class="komunisme__media-henk" data-scroll data-scroll-speed="2">
           <img
             src="./assets/henk.jpeg"
             alt="Henk Sneevliet"
             class="komunisme__image-henk"
           />
         </figure>
-        <figure class="komunisme__media-isdv">
+        <figure class="komunisme__media-isdv" data-scroll data-scroll-speed="3">
           <img
             src="./assets/isdv-2.jpg"
             alt="Indische Sociaal Democratische Vereeniging "
             class="komunisme__image-sdov"
           />
         </figure>
-        <blockquote class="komunisme__quote display-lg">
+        <blockquote
+          class="komunisme__quote display-lg"
+          data-scroll
+          data-scroll-speed="2"
+        >
           “Berpikir besar kemudian Bertindak”
         </blockquote>
         <div class="komunisme__to-indo">
-          <figure class="komunisme__to-indo__media">
+          <figure
+            class="komunisme__to-indo__media"
+            data-scroll
+            data-scroll-speed="2"
+          >
             <img
               src="./assets/volskraad.jpg"
               alt="Surat"
               class="komunisme__to-indo__image"
             />
           </figure>
-          <p class="komunisme__to-indo__paragraph text-md">
+          <p
+            class="komunisme__to-indo__paragraph text-md"
+            data-scroll
+            data-scroll-speed="2"
+          >
             Setelah Kembali ke Indonesia (1919) Tan Malaka mengadakan surat
             menyurat dengan rekan-rekannya di Belanda. Dan sejak itu Tan Malaka
             mulai menulis artikel antara lain di surat kabar berbahasa Belanda,
             Het Vrije Woord, yang terbit di Semarang.
           </p>
         </div>
-        <p class="komunisme__struggle text-md">
+        <p
+          class="komunisme__struggle text-md"
+          data-scroll
+          data-scroll-speed="1"
+        >
           Untuk memperjuangkan nasib petani, ia menjadi anggota Volksraad (Dewan
           Rakyat) dalam pemilihan tahun 1920 mewakili kaum kiri. Namun, baru
           setahun ia mengundurkan diri dan memilih membuka sekolah Rakyat di
           Semarang atas bantuan seorang Tokoh Syarikat Islam (SI).
         </p>
-        <figure class="komunisme__media-surat">
+        <figure
+          class="komunisme__media-surat"
+          data-scroll
+          data-scroll-speed="3"
+        >
           <img
             src="./assets/het-vrije.jpg"
             alt="Surat"
@@ -224,37 +296,61 @@
       </section>
 
       <section class="pemikiran">
-        <blockquote class="pemikiran__quote display-lg">
+        <blockquote
+          class="pemikiran__quote display-lg"
+          data-scroll
+          data-scroll-speed="1"
+        >
           “Belajarlah dari Barat, tapi jangan jadi peniru Barat, melainkan
           jadilah murid dari Timur yang cerdas”
         </blockquote>
 
-        <h2 class="pemikiran__1922 display-4xl">1922</h2>
+        <h2
+          class="pemikiran__1922 display-4xl"
+          data-scroll
+          data-scroll-speed="2"
+        >
+          1922
+        </h2>
 
-        <p class="pemikiran__penangkapan text-md">
+        <p
+          class="pemikiran__penangkapan text-md"
+          data-scroll
+          data-scroll-speed="1"
+        >
           Pada tahun 1922 Tan Malaka ditangkap pemerintah Kolonial Belanda
           karena terlibat aksi pemogokan buruh perkebunan. Kemudian ia minta
           untuk mengasingkan diri ke Belanda, tidak lama setelah itu ia ke
           Moskwa.
         </p>
 
-        <h2 class="pemikiran__1925 display-4xl">1925</h2>
+        <h2
+          class="pemikiran__1925 display-4xl"
+          data-scroll
+          data-scroll-speed="2"
+        >
+          1925
+        </h2>
 
-        <p class="pemikiran__republiek text-md">
+        <p
+          class="pemikiran__republiek text-md"
+          data-scroll
+          data-scroll-speed="1"
+        >
           Pada tahun 1925 ketika berada di Cina, Tan Malaka menulis buku kecil
           berjudul Naar de Republiek yang dicetak di Kanton. Buku ini
           menginspirasi Soekarno, Hatta, Sjahrir, dkk untuk memperjuangkan
           kemerdekaan Indonesia dari barisan yang lain.
         </p>
 
-        <p class="pemikiran__madilog text-md">
+        <p class="pemikiran__madilog text-md" data-scroll data-scroll-speed="1">
           Antara tahun 1942 dan 1943 Tan Malaka menulis buku Madilog
           (Materialisme, Dialektika, Logika). Sebuah buku yang berisi argumen
           beliau tentang pentingnya pola pikir analitik dalam mencapai sebuah
           kesimpulan yang valid.
         </p>
 
-        <figure class="pemikiran__media">
+        <figure class="pemikiran__media" data-scroll data-scroll-speed="3">
           <img
             src="./assets/madilog.jpg"
             alt="Madilog"
@@ -264,46 +360,74 @@
       </section>
 
       <section class="kematian">
-        <blockquote class="kematian__quote display-lg">
+        <blockquote
+          class="kematian__quote display-lg"
+          data-scroll
+          data-scroll-speed="1"
+        >
           “Ia, Tan Malaka, orang pertama yang menulis konsep Republik
           Indonesia... Tapi hidupnya berakhir tragis di ujung senapan tentara
           republik yang didirikannya.”
         </blockquote>
 
-        <p class="kematian__penangkapan text-md">
+        <p
+          class="kematian__penangkapan text-md"
+          data-scroll
+          data-scroll-speed="1"
+        >
           Pada 1946, Tan Malaka ditangkap dengan tuduhan menggerakkan rakyat
           menentang perjanjian Linggarjati antara Belanda dan Indonesia.
         </p>
 
-        <p class="kematian__penuduhan text-md">
+        <p
+          class="kematian__penuduhan text-md"
+          data-scroll
+          data-scroll-speed="1"
+        >
           Tidak lama kemudian Tan Malaka dituduh terlibat dalam peristiwa 3 Juli
           1946, yakni peristiwa kudeta terhada pemerintah. Namun pengadilan
           menyatakan Tan Malaka tidak terlibat dan ia dibebaskan.
         </p>
 
         <div class="kematian__1949">
-          <p class="kematian__eksekusi text-md">
+          <p
+            class="kematian__eksekusi text-md"
+            data-scroll
+            data-scroll-speed="1"
+          >
             Pada 21 Februari 1949, Tan Malaka dieksekusi mati oleh Suradi
             Tekebek, orang yang diberi tugas oleh Letnan Dua Soekotjo dari
             Batalion Sikatan, Divisi Brawijaya. Setelah dieksekusi ia dimakamkan
             di tengah hutan dekat markas Soekotjo. Kematiannya tanpa dibuat
             laporan maupun pemeriksaan lebih lanjut.
           </p>
-          <figure class="kematian__media-soekarno">
+          <figure
+            class="kematian__media-soekarno"
+            data-scroll
+            data-scroll-speed="3"
+          >
             <img
               src="./assets/soekarno.jpg"
               alt="Presiden Soekarno"
               class="kematian__image-soekarno"
             />
           </figure>
-          <p class="kematian__pahlawan text-md">
+          <p
+            class="kematian__pahlawan text-md"
+            data-scroll
+            data-scroll-speed="1"
+          >
             Pada tahun 1963 Tan Malaka dianugerahi Gelar Pahlawan Nasional
             berdasarkan Keputusan Presiden Soekarno tanggal 28 Maret 1963.
           </p>
         </div>
 
         <div class="kematian__2007">
-          <figure class="kematian__media-tan-malaka">
+          <figure
+            class="kematian__media-tan-malaka"
+            data-scroll
+            data-scroll-speed="3"
+          >
             <img
               src="./assets/eksekusi.jpg"
               alt="Tan Malaka"
@@ -311,14 +435,18 @@
             />
           </figure>
 
-          <p class="kematian__makam text-md">
+          <p class="kematian__makam text-md" data-scroll data-scroll-speed="1">
             Pada 2007, seorang peneliti Belanda Harry A. Poeze, menemukan makam
             Tan Malaka di Desa Selopanggung, Kecamatan Semen, Kabupaten Kediri,
             Jawa Timur.
           </p>
         </div>
 
-        <blockquote class="kematian__suara display-lg">
+        <blockquote
+          class="kematian__suara display-lg"
+          data-scroll
+          data-scroll-speed="1"
+        >
           “Ingatlah! Bahwa dari dalam kubur, suara saya akan lebih keras
           daripada di atas bumi”
         </blockquote>
@@ -326,5 +454,6 @@
     </main>
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script type="module" src="./src/js/script.js"></script>
   </body>
 </html>
