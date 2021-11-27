@@ -321,7 +321,6 @@ body {
 UTILITY CLASSES
 ========== */
 
-.display-md,
 .display-lg,
 .display-xl,
 .display-2xl,
@@ -332,77 +331,69 @@ UTILITY CLASSES
 }
 
 .display-4xl {
-  /* font-size: 9rem; */
   font-size: 11vw;
   text-transform: uppercase;
-  line-height: 1;
+  line-height: 11vw;
 }
 
 .display-2xl {
-  font-size: 6rem;
-  line-height: 1;
-  margin-bottom: 7.5rem;
+  font-size: 9vw;
+  line-height: 9vw;
+  margin-bottom: 2rem;
 }
 
 .display-lg {
-  /* font-size: 1.75rem; */
   font-size: 7.4vw;
-  /* line-height: 1.3; */
   line-height: 8vw;
-  margin-bottom: 7.5rem;
+  margin-bottom: 2rem;
 }
 
 .text-lg {
-  /* font-size: 3rem; */
   font-size: 7.4vw;
-  /* line-height: 1.3; */
+  font-weight: 300;
   line-height: 8vw;
   letter-spacing: -0.5px;
 }
 
 .text-md {
-  /* font-size: 1.25rem; */
-  font-size: 3.55vw;
-  /* line-height: 1.3; */
-  line-height: 4.72vw;
+  font-size: 4.55vw;
+  line-height: 6.1vw;
 }
 
 @media screen and (min-width: 600px) {
   .text-md {
-    font-size: 12.8px;
-    line-height: 1rem;
+    font-size: 1rem;
+    line-height: 22px;
   }
 }
 
 @media screen and (min-width: 900px) {
   .display-4xl {
-    font-size: 9rem;
-    text-transform: uppercase;
-    line-height: 1;
+    font-size: 7.4vw;
+    line-height: 8vw;
   }
 
   .display-2xl {
-    font-size: 6rem;
-    line-height: 1;
-    margin-bottom: 7.5rem;
+    font-size: 5.11vw;
+    line-height: 5.2vw;
+    margin-bottom: 6rem;
   }
 
   .display-lg {
-    /* font-size: 3rem; */
     font-size: 4.11vw;
     line-height: 4.2vw;
-    margin-bottom: 7.5rem;
+    margin-bottom: 6rem;
   }
 
   .text-lg {
-    font-size: 3rem;
-    line-height: 1.3;
-    letter-spacing: -0.5px;
+    font-size: 4.11vw;
+    line-height: 4.2vw;
+    margin-bottom: 6rem;
   }
 
   .text-md {
-    font-size: 1.25rem;
-    line-height: 1.3;
+    font-size: 1.6vw;
+    line-height: 2.1vw;
   }
 }
 
@@ -475,7 +466,7 @@ section {
 
 .intro {
   grid-column: 2 / -2;
-  padding-block: 4rem;
+  padding-block: 2rem;
 }
 
 .intro__quote {
@@ -495,9 +486,14 @@ section {
 
 .intro__description {
   grid-column: 1 / -1;
+  margin-top: 3rem;
 }
 
 @media screen and (min-width: 900px) {
+  .intro {
+    padding-block: 4rem;
+  }
+
   .intro__quote {
     grid-column: 1 / 9;
   }
@@ -512,6 +508,7 @@ section {
 
   .intro__description {
     grid-column: 6 / -1;
+    margin-top: unset;
   }
 }
 
@@ -521,7 +518,7 @@ MASA MUDA
 
 .masa-muda {
   grid-column: 2 / -2;
-  padding-block: 4rem;
+  padding-block: 2rem;
 }
 
 .masa-muda__title {
@@ -536,7 +533,7 @@ MASA MUDA
 }
 
 .masa-muda__article {
-  grid-column: 1 / 3;
+  grid-column: 1 / -1;
 }
 
 .masa-muda__article > * + * {
@@ -544,10 +541,15 @@ MASA MUDA
 }
 
 .masa-muda__media {
-  grid-column: 3 / -1;
+  grid-column: 1 / -1;
+  margin-top: 3rem;
 }
 
 @media screen and (min-width: 900px) {
+  .masa-muda {
+    padding-block: 4rem;
+  }
+
   .masa-muda__title {
     grid-column: 1 / 9;
   }
@@ -563,6 +565,7 @@ MASA MUDA
 
   .masa-muda__media {
     grid-column: 8 / -1;
+    margin-top: unset;
   }
 }
 
@@ -573,7 +576,7 @@ EDUCATION
 .education {
   color: #fff;
   grid-column: 2 / -2;
-  padding-block: 4rem;
+  padding-block: 2rem;
   position: relative;
 }
 
@@ -610,7 +613,7 @@ EDUCATION
 }
 
 .education__article {
-  grid-column: 1 / 3;
+  grid-column: 1 / -1;
 }
 
 .education__article > * + * {
@@ -618,7 +621,8 @@ EDUCATION
 }
 
 .education__media {
-  grid-column: 3 / -1;
+  grid-column: 1 / -1;
+  margin-top: 3rem;
 }
 
 .education__quote {
@@ -627,6 +631,10 @@ EDUCATION
 }
 
 @media screen and (min-width: 900px) {
+  .education {
+    padding-block: 4rem;
+  }
+
   .education__heading {
     grid-column: 1 / 9;
   }
@@ -635,12 +643,9 @@ EDUCATION
     grid-column: 2 / 7;
   }
 
-  .education__article > * + * {
-    margin-top: 2rem;
-  }
-
   .education__media {
     grid-column: 8 / -1;
+    margin-top: unset;
   }
 
   .education__quote {
@@ -655,7 +660,7 @@ MASA KULIAH
 
 .masa-kuliah {
   grid-column: 2 / -2;
-  padding-block: 4rem;
+  padding-block: 2rem;
   position: relative;
 }
 
@@ -685,35 +690,20 @@ MASA KULIAH
   );
 }
 
-.masa-kuliah__media {
-  grid-column: 1 / 7;
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(5, 155px);
-  column-gap: 2rem;
-}
-
 .masa-kuliah__media-school {
-  grid-column: 1 / 6;
-  grid-row: 1 / 3;
+  grid-column: 1 / 4;
   position: relative;
   z-index: 1;
 }
 
 .masa-kuliah__media-book {
-  grid-column: 3 / 7;
-  grid-row: 2 / -1;
-}
-
-.masa-kuliah__image-school,
-.masa-kuliah__image-book {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  grid-column: 3 / -1;
+  margin-top: -4rem;
 }
 
 .masa-kuliah__article {
-  grid-column: 8 / -1;
+  grid-column: 1 / -1;
+  margin-top: 4rem;
 }
 
 .masa-kuliah__article > * + * {
@@ -721,8 +711,31 @@ MASA KULIAH
 }
 
 .masa-kuliah__quote {
-  grid-column: 1 / -2;
-  margin-top: 9rem;
+  grid-column: 1 / -1;
+  margin-top: 4rem;
+}
+
+@media screen and (min-width: 900px) {
+  .masa-kuliah {
+    padding-block: 4rem;
+  }
+
+  .masa-kuliah__media-school {
+    grid-column: 1 / 6;
+  }
+
+  .masa-kuliah__media-book {
+    grid-column: 3 / 7;
+  }
+
+  .masa-kuliah__article {
+    grid-column: 8 / -1;
+  }
+
+  .masa-kuliah__quote {
+    grid-column: 1 / -2;
+    margin-top: 9rem;
+  }
 }
 
 /* ==========
@@ -732,7 +745,7 @@ KOMUNISME
 .komunisme {
   color: #fff;
   grid-column: 2 / -2;
-  padding-block: 4rem;
+  padding-block: 2rem;
   position: relative;
 }
 
@@ -748,7 +761,7 @@ KOMUNISME
 }
 
 .komunisme__article {
-  grid-column: 3 / 8;
+  grid-column: 1 / -1;
 }
 
 .komunisme__article > * + * {
@@ -756,44 +769,95 @@ KOMUNISME
 }
 
 .komunisme__media-henk {
-  grid-column: 8 / -2;
+  grid-column: 1 / -1;
+  margin-top: 2rem;
 }
 
 .komunisme__media-isdv {
-  grid-column: 1 / 5;
+  grid-column: 1 / -1;
   margin-top: 4rem;
 }
 
 .komunisme__quote {
-  grid-column: 6 / -2;
-  margin-top: 6rem;
+  grid-column: 1 / -1;
+  margin-top: 2rem;
 }
 
 .komunisme__to-indo {
-  grid-column: 2 / -2;
-  margin-top: 4rem;
-  display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  column-gap: 2rem;
-  align-items: center;
+  grid-column: 1 / -1;
+  margin-top: 2rem;
 }
 
 .komunisme__to-indo__media {
-  grid-column: 1 / 7;
+  grid-column: 1 / -1;
 }
 
 .komunisme__to-indo__paragraph {
-  grid-column: 7 / -1;
+  grid-column: 1 / -1;
+  margin-top: 2rem;
 }
 
 .komunisme__struggle {
-  grid-column: 1 / 6;
-  margin-top: 9rem;
+  grid-column: 1 / 4;
+  margin-top: 4rem;
 }
 
 .komunisme__media-surat {
-  grid-column: 7 / 11;
-  margin-top: -2rem;
+  grid-column: 2 / -1;
+  margin-top: 4rem;
+}
+
+@media screen and (min-width: 900px) {
+  .komunisme {
+    padding-block: 4rem;
+  }
+
+  .komunisme__article {
+    grid-column: 3 / 8;
+  }
+
+  .komunisme__media-henk {
+    grid-column: 8 / -2;
+    margin-top: unset;
+  }
+
+  .komunisme__media-isdv {
+    grid-column: 1 / 5;
+    margin-top: 4rem;
+  }
+
+  .komunisme__quote {
+    grid-column: 6 / -2;
+    margin-top: 6rem;
+  }
+
+  .komunisme__to-indo {
+    grid-column: 2 / -2;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    column-gap: 2rem;
+    align-items: center;
+    margin-top: unset;
+  }
+
+  .komunisme__to-indo__media {
+    grid-column: 1 / 7;
+  }
+
+  .komunisme__to-indo__paragraph {
+    grid-column: 7 / -1;
+    margin-top: unset;
+  }
+
+  .komunisme__struggle {
+    grid-column: 1 / 6;
+    margin-top: 9rem;
+  }
+
+  .komunisme__media-surat {
+    grid-column: 7 / 11;
+    margin-top: -2rem;
+  }
 }
 
 /* ==========
@@ -802,8 +866,8 @@ PEMIKIRAN
 
 .pemikiran {
   grid-column: 2 / -2;
-  padding-block: 4rem;
-  padding-top: 20rem;
+  padding-top: 8rem;
+  padding-bottom: 2rem;
   position: relative;
 }
 
@@ -823,34 +887,35 @@ PEMIKIRAN
 }
 
 .pemikiran__quote {
-  grid-column: 1 / 8;
-}
-
-.pemikiran__penangkapan {
-  grid-column: 2 / 8;
+  grid-column: 1 / -1;
 }
 
 .pemikiran__1922 {
-  grid-column: 8 / -2;
+  grid-column: 3 / -1;
+}
+
+.pemikiran__penangkapan {
+  grid-column: 1 / 4;
+  margin-top: 3rem;
 }
 
 .pemikiran__1925 {
-  grid-column: 2 / 6;
+  grid-column: 1 / 3;
+  margin-top: 3rem;
 }
 
 .pemikiran__republiek {
-  grid-column: 6 / -2;
-  margin-top: 6rem;
+  grid-column: 2 / -1;
+  margin-top: 3rem;
 }
 
 .pemikiran__madilog {
-  grid-column: 4 / -4;
-  margin-top: 6rem;
-  text-align: center;
+  grid-column: 1 / 4;
+  margin-top: 4rem;
 }
 
 .pemikiran__media {
-  grid-column: 4 / -4;
+  grid-column: 3 / -1;
   margin-top: 4rem;
 }
 
@@ -860,13 +925,55 @@ PEMIKIRAN
   object-fit: cover;
 }
 
+@media screen and (min-width: 900px) {
+  .pemikiran {
+    padding-top: 20rem;
+    padding-bottom: 4rem;
+  }
+
+  .pemikiran__quote {
+    grid-column: 1 / 8;
+  }
+
+  .pemikiran__1922 {
+    grid-column: 8 / -2;
+    margin-top: 9rem;
+  }
+
+  .pemikiran__penangkapan {
+    grid-column: 2 / 8;
+    margin-top: unset;
+  }
+
+  .pemikiran__1925 {
+    grid-column: 2 / 6;
+    margin-top: unset;
+  }
+
+  .pemikiran__republiek {
+    grid-column: 6 / -2;
+    margin-top: 6rem;
+  }
+
+  .pemikiran__madilog {
+    grid-column: 4 / -4;
+    margin-top: 6rem;
+    text-align: center;
+  }
+
+  .pemikiran__media {
+    grid-column: 4 / -4;
+    margin-top: 4rem;
+  }
+}
+
 /* ==========
 KEMATIAN
 ========== */
 
 .kematian {
   grid-column: 2 / -2;
-  padding-block: 4rem;
+  padding-block: 2rem;
   position: relative;
 }
 
@@ -885,49 +992,51 @@ KEMATIAN
 
 .kematian__quote {
   color: #fff;
-  grid-column: 1 / 10;
+  grid-column: 1 / -1;
 }
 
 .kematian__penangkapan {
   color: #fff;
-  grid-column: 2 / 7;
+  grid-column: 1 / 3;
 }
 
 .kematian__penuduhan {
   color: #fff;
-  grid-column: 7 / -2;
-}
-
-.kematian__eksekusi {
-  grid-column: 1 / 6;
-  margin-top: 12rem;
+  grid-column: 3 / -1;
 }
 
 .kematian__1949 {
-  grid-column: 1/ 6;
+  grid-column: 1 / -1;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  column-gap: 2rem;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 1rem;
+}
+
+.kematian__eksekusi {
+  grid-column: 1 / 4;
+  margin-top: 14rem;
 }
 
 .kematian__media-soekarno {
-  grid-column: 2 / 5;
+  grid-column: 2 / -1;
+  margin-top: 3rem;
 }
 
 .kematian__pahlawan {
-  grid-column: 2 / 6;
+  grid-column: 1 / 4;
+  margin-top: 3rem;
 }
 
 .kematian__2007 {
-  grid-column: 7 / -2;
+  grid-column: 1 / -1;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  column-gap: 2rem;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 1rem;
 }
 
 .kematian__media-tan-malaka {
-  grid-column: 1 / -1;
-  margin-top: 10rem;
+  grid-column: 2 / -1;
+  margin-top: 3rem;
 }
 
 .kematian__image-tan-malaka {
@@ -937,13 +1046,88 @@ KEMATIAN
 }
 
 .kematian__makam {
-  grid-column: 1 / -2;
+  grid-column: 1 / 4;
   margin-top: 4rem;
 }
 
 .kematian__suara {
   text-align: center;
   font-weight: 500;
-  grid-column: 3 / -3;
-  margin-top: 9rem;
+  grid-column: 1 / -1;
+  margin-top: 6rem;
+}
+
+@media screen and (min-width: 900px) {
+  .kematian {
+    padding-block: 4rem;
+  }
+
+  .kematian::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -7.3vw;
+    z-index: -2;
+    width: 100vw;
+    height: 40rem;
+    background-image: url('./assets/3-juli.jpg');
+    background-size: cover;
+    background-position: top;
+  }
+
+  .kematian__quote {
+    grid-column: 1 / 10;
+  }
+
+  .kematian__penangkapan {
+    grid-column: 1 / 6;
+  }
+
+  .kematian__penuduhan {
+    grid-column: 7 / -2;
+  }
+
+  .kematian__eksekusi {
+    grid-column: 1 / 6;
+    margin-top: 12rem;
+  }
+
+  .kematian__1949 {
+    grid-column: 1/ 6;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 2rem;
+  }
+
+  .kematian__media-soekarno {
+    grid-column: 2 / 5;
+    margin-top: unset;
+  }
+
+  .kematian__pahlawan {
+    grid-column: 2 / 6;
+    margin-top: unset;
+  }
+
+  .kematian__2007 {
+    grid-column: 7 / -2;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 2rem;
+  }
+
+  .kematian__media-tan-malaka {
+    grid-column: 1 / -1;
+    margin-top: 10rem;
+  }
+
+  .kematian__makam {
+    grid-column: 1 / -2;
+    margin-top: 4rem;
+  }
+
+  .kematian__suara {
+    grid-column: 3 / -3;
+    margin-top: 9rem;
+  }
 }
